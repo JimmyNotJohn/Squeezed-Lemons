@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <title> LEMONS </title>
+
+    <link rel="icon" href="lemons.jpg"/>
+
+<link rel="stylesheet" href="website_styles.css">
+
+</head>
+
+<body id="body">
+
+    <script>
+
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            document.getElementById('sndBtn1')
+                .style.display = "none";
+            document.getElementById('sndBtn2')
+                .style.display = "block";
+        }
+        function pause() {
+            var audio = document.getElementById("audio");
+            audio.pause();
+            document.getElementById('sndBtn1')
+                .style.display = "block";
+            document.getElementById('sndBtn2')
+                .style.display = "none";
+        }
+
+        function appear() {
+            document.getElementById('real')
+                .style.display = "block";
+            document.getElementById('btnID')
+                .style.display = "none";
+            document.getElementById('p1')
+                .style.display = "none";
+            document.getElementById('sndBtn1')
+                .style.display = "none";
+            document.getElementById('sndBtn2')
+                .style.display = "none";
+            document.getElementById('h1')
+                .style.display = "none";
+            document.getElementById('container')
+                .style.display = "none";
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+
+    </script>
+
+
+
+    <h1 id="h1">Squeezed Lemons</h1>
+
+    <div class="container" id="container">
+        <div class="abt">
+            <p id="p1">Squeezed lemons. What a wonderful thing. Lemons, but squeezed. It's as if, somehow, someway, somebody squeezed a lemon. It's an incredibly great consept squeezed lemons are, in fact, they are so great that they deserve a grammy. Squeezed lemons are so cool because they are lemons, but not lemons, lemons, but of the squeezed variety. I know! Absolutely <i>Mind-Boggling</i>! I love squeezed lemons so much that I would kill someone for one more squeezed lemon! Oh how That lemon would taste so good (that's because it's squeezed)! I just love me a good ol' squeezed lemon on a hot winter afternoon. Oh lemons oh lemons how, good youa re wher squezed oh lemons i love to make you get eat!'</p>
+        </div>
+    </div>
+    <input type="button" value="" onclick="play()" class="sounds" id="sndBtn1">
+    <audio loop id="audio" src="squeezedlemonsyeah.mp3"></audio>
+    <input type="button" value="" onclick="pause()" class="mute" id="sndBtn2"/>
+
+    <img src="lemonman.gif" class="img" id="real" />
+
+    <div class="magic">
+        <button type="button" value":]" onclick="appear()" class="lemonboy" id="btnID" />
+    </div>
+
+</body>
+
+</html>
